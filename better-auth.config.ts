@@ -21,20 +21,25 @@ export const auth = betterAuth({
   emailAndPassword: {
     enabled: true,
   },
-  trustedOrigins: [env.NEXT_PUBLIC_APP_URL],
+  trustedOrigins: [
+    env.NEXT_PUBLIC_APP_URL,
+    'http://localhost:3000',
+    'https://firegeoapp-tunnel-ypphmqi7.devinapps.com',
+    'https://firegeoapp-tunnel-gh90lmfb.devinapps.com',
+  ],
   session: {
     expiresIn: 60 * 60 * 24 * 7, // 7 days
     updateAge: 60 * 60 * 24, // Update session if older than 1 day
     cookieOptions: {
       httpOnly: true,
       sameSite: 'lax',
-      secure: env.NODE_ENV === 'production',
+      secure: env.NEXT_PUBLIC_APP_URL.startsWith('https://') || env.NODE_ENV === 'production',
       path: '/',
     },
   },
   advanced: {
     crossSubDomainCookies: {
-      enabled: env.NODE_ENV === 'production',
+      enabled: env.NEXT_PUBLIC_APP_URL.includes('tunnel') || env.NODE_ENV === 'production',
     },
   },
 });
