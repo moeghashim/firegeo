@@ -36,6 +36,7 @@ const nextConfig: NextConfig = {
     'firegeoapp-tunnel-3i2dzb0a.devinapps.com',
     'firegeoapp-tunnel-ys8qmi7m.devinapps.com',
     'firegeoapp-tunnel-msbw77oj.devinapps.com',
+    'firegeoapp-tunnel-ypphmqi7.devinapps.com',
   ],
 };
 
