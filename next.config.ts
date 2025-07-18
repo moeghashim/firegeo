@@ -24,6 +24,11 @@ const nextConfig: NextConfig = {
       },
     ],
   },
+  allowedDevOrigins: [
+    'firegeoapp-tunnel-7ulcv8hj.devinapps.com',
+    'firegeoapp-tunnel-nfvi106v.devinapps.com',
+    'firegeoapp-tunnel-fk54n9nw.devinapps.com',
+  ],
 };
 
 export default nextConfig;
