@@ -25,6 +25,7 @@ const nextConfig: NextConfig = {
     ],
   },
   allowedDevOrigins: [
+    'firegeoapp-tunnel-n3b9tv3a.devinapps.com',
     'firegeoapp-tunnel-7ulcv8hj.devinapps.com',
     'firegeoapp-tunnel-nfvi106v.devinapps.com',
     'firegeoapp-tunnel-fk54n9nw.devinapps.com',

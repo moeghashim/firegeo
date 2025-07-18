@@ -24,6 +24,7 @@ export const auth = betterAuth({
   trustedOrigins: [
     env.NEXT_PUBLIC_APP_URL,
     'http://localhost:3000',
+    'https://firegeoapp-tunnel-n3b9tv3a.devinapps.com',
     'https://firegeoapp-tunnel-ypphmqi7.devinapps.com',
     'https://firegeoapp-tunnel-gh90lmfb.devinapps.com',
   ],
